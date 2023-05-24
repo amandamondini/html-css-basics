@@ -1,0 +1,87 @@
+/* CSS - Cascading Style Sheets - language that defines style and positioning of HTML elements 
+Ruleset (set of rules applied to an element - formatting below)
+Selector {
+    declaration
+    property: value;
+    property: value;
+    key: value;
+}
+
+Box  model
+*/
+
+/* Wildcard Selector - changes properties of everything*/
+* {
+    margin: 0;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+/* Element Selector */
+body {
+    background-color: #cacaca;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+}
+/* ID selector.. # denotes id and . denotes class*/
+#nav-bar{
+background-color: #006266;
+}
+/* Class selector */
+.nav-link{
+    color: white;
+    text-decoration: none;
+    }
+
+/*Psuedo-class selectors */
+.nav-link:hover{
+    color: red;
+}
+
+.nav-link:focus{
+    color: blue;
+}
+/* .nav-link:active{
+    color: green;
+} */
+
+/* Compound Selector (don't need id or class in the HTML code */ 
+body > section > article img{
+    width: 150px ;
+    height: 150px ;
+    object-fit: cover;
+}
+
+/* Order of Specificity
+1. !important
+2. in-line style
+3. id selector
+4. class
+5. element
+*/
+
+#order-of-specificity{
+    border: 2px solid black;
+    width: 1000px;
+    height: 100px;
+    background-color: purple;
+}
+
+div{
+    background-color: red;
+}
+
+.order-of-specificity{
+background-color: blue;
+}
+
+.parent-element{
+    width: 750px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 2em;
+}
+.child{
+    border: 2px solid purple;
+    margin: 1em;
+}

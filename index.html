@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Doctype specifies document type to the browser -->
+<html lang="en">
+    <!-- lang is an attribute specifying language - attributes allow elements to perform additional things. Elements are the building blocks of HTML docs -->
+<head> 
+    <!-- contains all metadata -->
+    <meta charset="UTF-8">
+    <!-- character encoding (for different alphabets) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- http equiv permits the use of HTTP methods, not really ever going to change this -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this has to do with mobile design/being mobile friendly. This tag checks the size of the screen. Content attribute will check the width (horizontal scrolling is the issue) -->
+    <!-- specifies the default sizing of the page for mobile-first design -->
+    <link rel="stylesheet" href="style.css">
+    <!-- typed link:css (tab) to get the above line. This tag connects files together and specifies relationships -->
+    <title>HTML & CSS Basics</title>
+</head>
+<body>
+    <!-- The body contains everything displayed to the viewport -->
+
+    <header id = "header">HTML & CSS Fundamentals</header> 
+    <nav id ="nav-bar">
+        <!-- attribute values should not have spaces. spaces indicate more than 1 value -->
+        <a href="" class="nav-link">About</a> 
+        <!-- type a.nav-link{About} then tab. This creates a link -->
+        <a href="" class="nav-link">Content</a>
+        <a href="" class="nav-link">Contact</a>
+        <!-- typed a.nav-bar{Contact} then tab - this is an emmet abbreivation -->
+        <!-- a is an anchor tag or link element. It immediatly throws an href at you. you put the URL after href -->
+    </nav>
+
+    <!-- emmet abrv: section>article.articles>h1{Title}+p>strong{This is my paragraph that's bold}^img -->
+<section>
+    <article class="articles">
+        <h1>Title</h1>
+        <p><strong>Bold paragraph</strong></p>
+        <img src="https://images.unsplash.com/photo-1629755725339-efd38b8253bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1848&q=80" alt="Picture of French Bulldog">
+    </article>
+</section>
+
+<!-- inline style example below -->
+<div class="order-of-specificity" id="order-of-specificity" style="background-color: green;"> Order of Specificity</div>
+
+<section class ="parent-element">
+    Parent Box
+    <article class ="child"> Child Box</article>
+    </section>
+</body>
+
+</html>
